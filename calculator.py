@@ -8,5 +8,10 @@ class calculator:
         if b == 0:
             raise ZeroDivisionError()
         return a / b
+    def add(self,a,b):
+        self._check_type(a,b)
+        return a + b
     
-#TODO: Criar os metodos para adição, subtração e multiplicação passando antes pelo check_type para garantir que e um tipo numerico
+    def subtracao(self,a,b):
+        self._check_type(a,b)
+        return a - b
