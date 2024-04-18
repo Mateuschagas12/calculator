@@ -40,5 +40,12 @@ class TestCalculator(unittest.TestCase):
 
         #Não é preciso lançar erros ou fazer testes com soma de strings, pois na class calculator,
         # já há uma função implementada para gerar erro caso não seja float ou inteiro.
+    
+    def test_multiplication(self):
+        self.assertEqual(self.calculator.multiplicacao(3, 4), 12)
+        self.assertEqual(self.calculator.multiplicacao(-3, 4), -12)
+        self.assertEqual(self.calculator.multiplicacao(0, 5), 0)
+        self.assertEqual(self.calculator.multiplicacao(2.5,2),5.0)
+            
 if __name__ == "__main__":
     unittest.main()    

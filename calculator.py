@@ -15,3 +15,7 @@ class calculator:
     def subtracao(self,a,b):
         self._check_type(a,b)
         return a - b
+
+    def multiplicacao(self, a, b):
+        self._check_type(a, b)
+        return a*b
